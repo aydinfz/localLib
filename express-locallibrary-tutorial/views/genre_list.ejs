@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+  </head>
+  <body>
+    <h1><%= title %></h1>
+
+    <ul>
+      <% if (genre_list.length > 0) { %> <% genre_list.forEach(function(genre) {
+      %>
+      <li>
+        <a href="<%= genre.url %>"><%= genre.name %></a>
+      </li>
+      <% }); %> <% } else { %>
+      <li>There are no genre.</li>
+      <% } %>
+    </ul>
+  </body>
+</html>
